@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css" type="text/css">
+    <title>Checkout Form</title>
+  </head>
+  <body
+   class="bg-light" style="min-height: 8000px;" >
+    <div class="container">
+        <div class="py-5 text-center">
+    <img class="mb-4 d-block mx-auto" src="image/cctb logo" alt="CCTB logo" width="150" height="100">
+        
+    <h2>checkout form</h2>
+    <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be
+triggered by attempting to submit the form without completing it.</p>
+    </div>
+    </div>
+<div class="container ">
+ 
+    <h4 class="mb-3">Billing Address</h4>
+<form novalidate> 
+    <div class="col-12">
+        <label for="date" class="form-label">Date</label>
+        <div class="input-group">
+            <input id="username" type="text" class="form-control" placeholder="Wed Nov 23 2023 18:27 GTM-0800(Pacific Standerd Time)">
+        </div>
+    <div class="invalid-feedback">
+        form filling date  Is Required
+    </div>
+   <div class="row g-3"> 
+    <div class="col-sm-6">
+        <label for="firstname" class="form-label">First Name</label>
+        <input id="firstname" type="text" class="form-control" placeholder="Ajay">
+    <div class="invalid-feedback">
+        Valid First Name Is Required
+    </div>
+    </div>
+    <div class="col-sm-6">
+        <label for="lastname" class="form-label">Last Name</label>
+        <input id="lastname" type="text" class="form-control" placeholder="Jangra">
+    <div class="invalid-feedback">
+        Valid Last Name Is Required
+    </div>
+   </div>
+   <div class="col-12">
+   <label for="username" class="form-label">User Name</label>
+        <div class="input-group">
+            <span class="input-group-text">@</span>
+        <input id="username" type="text" class="form-control" placeholder="ajangra">
+        </div>
+    <div class="invalid-feedback">
+        Valid username Is Required
+    </div>
+   </div>
+    <div class="col-12">
+        <label for="email" class="form-label">Email</label>
+        <div class="input-group">
+            
+        <input id="username" type="text" class="form-control" placeholder="xys12@gmail.com">
+        </div>
+    <div class="invalid-feedback">
+        Valid Email Address Is Required
+    </div>
+    </div>
+    <div class="col-12">
+        <label for="email" class="form-label">Address</label>
+        <div class="input-group">
+            
+        <input id="username" type="text" class="form-control" placeholder="123 MAIN STREET">
+        </div>
+    <div class="invalid-feedback">
+        Valid Address Is Required
+    </div>
+    </div>
+    <div class="col-12">
+        <label for="email" class="form-label">Address(Optional)</label>
+       
+        <div class="input-group">
+            
+        <input id="username" type="text" class="form-control" placeholder="Apartment or suite">
+        </div>
+    <div class="invalid-feedback">
+        Valid Address Is Required
+    </div>
+    
+    
+    
+        </div>
+        <div class="col-md-5">
+            <label for="country" class="form-label">Country</label>
+        <select id="username" class="form-control">
+                <option>choose</option>
+                <option>Austraila</option>
+                <option>Canada</option>
+            </select>
+        <div class="invalid-feedback">
+            Valid Last Name Is Required
+        </div>
+        </div>
+        <div class="col-md-4">
+            <label for="state" class="form-label">State</label>
+          <select id="username" class="form-control">
+                <option>choose</option>
+                <option value="Austraila">WA</option>
+                <option value="Austraila">SA</option>
+                <option value="canada">BC</option>
+                <option value="canada">ON</option>
+            </select>
+        <div class="invalid-feedback">
+            Valid Last Name Is Required
+        </div> 
+        </div>
+        <div class="col-md-3">
+            <label for="zip" class="form-label">Zip</label>
+        <input id="zip code" type="text" class="form-control" placeholder="123">
+            </div>
+        <div class="invalid-feedback">
+            Valid Last Name Is Required
+        </div>
+        </div>
+        <hr class="my-4">
+        <div class="col-12">
+            <div class="form-check"> 
+                <input id="sameAddress"
+                type="checkbox" class="form-check-input">
+                <label class="form-check-label" for="sameAddress"> shipping address in the same as Billing</label>
+            </div>
+            <div class="form-check"> 
+                <input id="saveinfo"
+                type="checkbox" class="form-check-input">
+                <label class="form-check-label" for="saveinfo"> save this info</label>
+            </div>
+        </div>
+        <hr class="my-4">
+        <h4 class="mb-3"> Payment</h4>
+        <div class="form-check">
+            <input id="Creditcard" name="PaymentMethod" type="radio" class="form-check-input" checked required>
+        <label for="Credit Card">Credit Card</label>
+        </div>
+        <div class="form-check">
+            <input id="debitcard" name="PaymentMethod" type="radio" class="form-check-input" checked required>
+        <label for="debitcard">Debit Card</label>
+        </div>
+        <div class="form-check">
+            <input id="paypal" name="PaymentMethod" type="radio" class="form-check-input" checked required>
+        <label for="paypal">Paypal</label>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6"> 
+                <label for="fullName " class="form-label">
+              Name On Card</label>
+              <input type="text" class="form-control">
+              <samll class="text-muted">
+                Full name As Desplayed On Card
+              </samll>
+              <div class="invalid-feedback">
+                Name On Card Is Required
+              </div>
+            </div>
+            <div class="col-sm-6">
+                <label for="CC-number" class="form-label">
+              Credit Card Number</label>
+              <input id="CC-number" type="text" class="form-control">
+              <div class="invalid-feedback">
+            Card Number Is Required
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <label for="CC-expire" class="form-label">
+          Expiration</label>
+          <input id="CC-expire" type="text" class="form-control">
+          <div class="invalid-feedback">
+        Expiration Is Required
+        </div>
+        </div>
+        <div class="col-sm-3">
+            <label for="CC-CVV" class="form-label">
+          CVV</label>
+          <input id="CC-CVV" type="text" class="form-control">
+          <div class="invalid-feedback">
+        CVV Is Required
+        </div>
+         </div>
+     <hr class="my-4">
+
+     <button class="btn btn-primary btn-lg btn-block mb-4">Continue To Checkout</button>
+      
+   </div> 
+   <center> <div class="footer">
+                   
+    &copy; 2017-2018 Company Name | <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Support</a>
+</div></center>
+  
+</form>
+<div class="input-box">
+    <div class="row g-3">
+<div class="col-4 order-top-right">
+
+    <h4 class="d-flex justify-content-between align-item-center">
+        <span class="text-muted">Your Cart</span>
+        <span class="badge bg-secondary rounded-pill">3</span>
+    </h4>
+<div class="list">
+    <ul class=" list-group">
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6>Product Nmae</h6>
+                <span class="text-muted">Brief Description</span>
+            </div>
+            <span class="text-muted">$12</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6>Second Product</h6>
+                <span class="text-muted">Brief Description</span>
+            </div>
+            <span class="text-muted">$8</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6>Third Product</h6>
+                <span class="text-muted">Brief Description</span>
+            </div>
+            <span class="text-muted">$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6 class="text-success">Promo Code</h6>
+                <span class="text-muted">EXAMPLECODE</span>
+            </div>
+            <span class="text-muted">-$5</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6>Total(USD)</h6>
+                
+            </div>
+            <span class="text-muted">$20</span>
+        </li>
+    </ul>
+</div>
+    <br class="my-4">
+    <div class="col-12">
+        <li class="list-group-item d-flex justify-content-between">
+            <div>
+                <h6 class="text-muted">Promo Code</h6>
+            </div>
+            <span class="input-group-text">Redeem</span>
+        </li>
+    </div>
+</div>
+</div>
+
+ 
+ 
+</body>
+
+</html>
